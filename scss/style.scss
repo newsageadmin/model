@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,600&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
+@import "system";
+@import "header";
+@import "modelInside";
+@import "member";
+@import "list";
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    background-color: #fbfbfb;
+  
+}
+
+.more {
+    color: #fff;
+    font-size: $font*2;
+    text-decoration: none;
+  
+    img {
+        margin-right: 15px;
+    }
+    &:hover {
+        color: initial;
+        text-decoration: none;
+    }
+}
+
+.f-color {
+    color: $m-color;
+}
+
+#loginBox {
+
+    width: 960px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+
+    .btnstyle {
+        background-color: $m-color;
+        color: #fff;
+    }
+   
+
+}
+
+.imageBoxstyle {
+      
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius:10px ;
+    img {
+        border-radius:10px ;
+    }
+}
+
+
+
+.runNewsbox {
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  
+    
+
+    .runNewstitle {
+        background-color: $m-color;
+        color: #fff;
+        padding: 2px 10px;
+        border-radius: 5px;
+        font-size: $font*1.4;
+       
+       
+    }
+    ul {
+        @include ulstyle();
+        li {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+
+            a {
+                color: $m-color;
+                text-decoration: none;
+                font-size: $font*1.3;
+                line-height: 37px;
+            }
+        }
+    }
+}
+
+.sliderBoxWarp {
+    min-height: 400px;
+    @include mob(){
+        min-height: inherit;
+    }
+
+    #sliderBox {
+   
+  
+
+        .owl-nav {
+          
+            margin: 0;
+          
+    
+        }
+    
+        .owl-prev {
+          position: absolute;
+          left: 25px;
+          color: #fff;
+          font-size: $font*2;
+          font-weight: 800;
+          top: 50%;
+          transform: translateY(-50%);
+          @include mob(){
+           display: none;
+          }
+    
+        }
+        .owl-next {
+            position: absolute;
+            right: 25px;
+            color: #fff;
+            font-size: $font*2;
+            font-weight: 800;
+            top: 50%;
+            transform: translateY(-50%);
+            @include mob(){
+                display: none;
+               }
+        }
+    
+        .sliderList {
+    
+            .sliderInfo {
+                position: absolute;
+                top: 30px;
+                left: 50px;
+                color: #fff;
+                font-weight: bold;
+                @include mob(){
+                    top: 5px;
+                    left: 15px;
+                }
+                .imageTitle {
+                    font-size: $font*2.125;
+                    @include mob(){
+                        font-size: $font*1;
+                    }
+                }
+                .modelName {
+                    font-size: $font*1.75;
+                    @include mob(){
+                        font-size: $font*1;
+                    }
+                }
+            }
+            .favorite {
+                position: absolute;
+                top: 30px;
+                color: #fff;
+                font-size: $font*2;
+                right: 40px;
+                @include mob(){
+                    top: 5px;
+                    right: 15px;
+                }
+            }
+            .reserve {
+                position: absolute;
+                right: 32px;
+                bottom: 40px;
+                @include mob(){
+                    right: 10px;
+                    bottom: 20px;
+                }
+    
+                a {
+                    text-decoration: none;
+                    background-color: #fff;
+                    display: inline-block;
+                    padding: 10px 15px;
+                    border-radius: 10vw;
+                    color: $m-color;
+                    font-weight: 500;
+                    font-size: $font*1.5;
+                    @include mob(){
+                        font-size: $font*1;
+                    }
+        
+                }
+            }
+        }
+        
+    }
+
+}
+
+
+
+.masterTitle {
+    color: $m-color;
+    font-weight:$bold;
+    font-size: $font*1.75;
+    margin-bottom: 15px;
+    @include mob(){
+        font-size: $font*1.2;
+    }
+
+    svg {
+       
+        fill: $m-color;
+    }
+
+    img {
+        transform: translateY(-5px);
+    }
+}
+
+.newModelWarp {
+    position: relative;
+
+    &:after {
+        content: '';
+        width: 100%;
+        height: 80%;
+        background-color: #E0E7F8;
+        position: absolute;
+        top: 20vh;
+        z-index: -1;
+        @include mob(){
+            height: 90%;
+        }
+    }
+
+}
+
+.newModel {
+  
+    .modelList {
+        padding: 15px 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        color: $m-color;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    .modelData {
+        p {
+            margin: 0;
+            font-weight: 500;
+        }
+    }
+    a.reserve {
+        
+            color: #fff;
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 10vw;
+            background-color: $m-color;
+            text-decoration: none;
+            @include mob(){
+                margin-top: 10px;
+            }
+          
+       
+    }
+   
+}
+
+.hotModel {
+
+    .col {
+        margin-bottom: 20px;
+        @include mob(){
+            margin-bottom: 0;
+        }
+    }
+
+    .imageBoxstyle {
+      
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius:10px ;
+        @include mob(){
+            margin-bottom: 20px;
+        }
+       img {
+        border-radius: 10px;
+
+        @include mob(){
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: top;
+            width: 100%;
+            height: 200px;
+        }
+       }
+       
+    }
+}
+
+
+.areaList {
+    min-height: 400px;
+
+    .newModel:nth-child(even){
+
+        .masterTitle {
+            color: #EEAFD5;
+            svg {
+                fill:#EEAFD5;
+            }
+        }
+        .modelList , .f-color {
+            color: #EEAFD5;
+        }
+        .reserve {
+            background-color:#EEAFD5;
+        }
+
+        .owl-theme .owl-dots .owl-dot span {
+           
+            background: #f5d6e9;
+        }
+        .owl-theme .owl-dots .owl-dot.active span {
+            background-color: #EEAFD5;
+        }
+       
+
+    }
+
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: $m-color;
+    text-align: center;
+    color: #fff;
+    margin-top: 25px;
+    padding: 10px 0;
+}

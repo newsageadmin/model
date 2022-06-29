@@ -1,0 +1,26 @@
+.backImg {
+    height: 200px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+   
+
+    h1 {
+        color: #fff;
+        text-align: center;
+        line-height: 200px;
+        margin: 0;
+    }
+
+    &.taipei {
+        background-color:aqua;
+    }
+    &.taichung {
+        background-color:#f00;
+    }
+    &.tainan {
+        background-color:antiquewhite;
+    }
+    &.taidong {
+        background-color:rgb(167, 28, 185)
+    }
+}

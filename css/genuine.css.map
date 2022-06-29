@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/genuine.scss",
+        "../scss/_system.scss"
+    ],
+    "names": [],
+    "file": "genuine.css"
+}

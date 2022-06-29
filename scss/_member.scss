@@ -1,0 +1,248 @@
+.memberBoxwarp {
+    min-height: 300px
+}
+.memberBox {
+
+    .memberList {
+        ul {
+            @include ulstyle();
+    
+            li {
+    
+                border-bottom: #ccc solid 1px;
+                padding: 10px 0 10px 15px;
+
+                @include pad(){
+                    .col {
+                     
+                        padding: 0 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+                    }
+                }
+
+                @include mob(){
+                    flex-wrap: wrap;
+                  
+
+                    .col:first-child {
+                        flex: 100%;
+                        padding: 10px 0;
+                        &:before {
+                            content: '預約單號';
+                            margin-right: 15px;
+                            background-color: #707070;
+                            color: #fff;
+                            width: 25%;
+                            display: inline-block;
+                            text-align: center;
+                            border-radius: 5px;
+                        }
+                    }
+                    .col:nth-child(2) {
+                        flex: 100%;
+                        padding: 10px 0;
+                        &:before {
+                            content: '預約日期';
+                            margin-right: 15px;
+                            background-color: #707070;
+                            color: #fff;
+                            width: 25%;
+                            display: inline-block;
+                            text-align: center;
+                            border-radius: 5px;
+                        }
+                    }
+                    .col:nth-child(3) {
+                        flex: 100%;
+                        padding: 10px 0;
+                        &:before {
+                            content: '模特';
+                            margin-right: 15px;
+                            background-color: #707070;
+                            color: #fff;
+                            width: 25%;
+                            display: inline-block;
+                            border-radius: 5px;
+                            text-align: center;
+                        }
+                    }
+                    .col:nth-child(4) {
+                        flex: 100%;
+                        padding: 10px 0;
+                        &:before {
+                            content: '地點';
+                            margin-right: 15px;
+                            background-color: #707070;
+                            color: #fff;
+                            width: 25%;
+                            display: inline-block;
+                            border-radius: 5px;
+                            text-align: center;
+                        }
+                    }
+                    .col:nth-child(5) {
+                        flex: 100%;
+                        padding: 10px 0;
+                        &:before {
+                            content: '預約單狀態';
+                            margin-right: 15px;
+                            background-color: #707070;
+                            color: #fff;
+                            width: 25%;
+                            display: inline-block;
+                            border-radius: 5px;
+                            text-align: center;
+                        }
+                        button {
+                            display: inline-block !important;
+
+                        }
+                    }
+                    .col:nth-child(6) {
+                        flex: 100%;
+                        padding: 10px 0;
+                        &:before {
+                            content: '檢視';
+                            background-color: #707070;
+                            color: #fff;
+                            text-align: center;
+                            margin-right: 15px;
+                            width: 25%;
+                            border-radius: 5px;
+                            display: inline-block;
+                        }
+                     
+                    }
+                }
+               
+    
+                &:first-child {
+                    background-color: #6B6B6B;
+                    color: #fff;
+                    padding: 10px;
+                    font-size: $font*1.25;
+                    border-radius: 10px 10px 0 0;
+                   @include mob(){
+                    display: none !important;
+                   }
+                   @include pad(){
+                    font-size: $font*1;
+                   }
+                }
+
+                &:last-child {
+                    border-bottom: none; 
+                }
+                .col {
+                    @include xl-pad(){
+                        padding: 0 15px;
+                    }
+                }
+    
+            }
+        }
+    }
+
+    .btn-ture {
+        background-color: $m-color;
+        color: #fff;
+        border-radius: 10vw;
+        text-decoration: none;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .btn-false {
+        border: $m-color solid 1px;
+        color: #333;
+        border-radius: 10vw;
+        text-decoration: none;
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
+    .userInfo {
+        border: $m-color solid 1px;
+        border-radius: 10px;
+        padding: 0 10px;
+        font-size: $font*1.75;
+    }
+
+    .bi-pencil-fill {
+        font-size: $font*1.25;
+        color: $m-color;
+    }
+   
+}
+
+.memberListwarp {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 0 0 10px 0 ;
+}
+
+.modelDatawarp  {
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+    .modelDataList {
+
+    
+        color: $m-color;
+       
+            @include ulstyle();
+            li {
+                font-size: $font*1.25;
+                margin-bottom: 31.5px;
+                @include xl(){
+                    margin-bottom: 21.5px;
+                }
+                @include xl-pad(){
+                   
+                    margin-bottom: 11.5px;
+                    width: 50%;
+                }
+                @include mob{
+                                      
+                    width: 100%;
+                    margin-bottom:10px;
+                }
+    
+            }
+
+            @include xl-pad(){
+             
+    display: flex;
+    flex-wrap: wrap;
+            }
+
+            @include mob(){
+             
+                display: flex;
+                flex-wrap: wrap;
+                        }
+       
+    }
+    
+
+}
+
+
+
+#view {
+
+    .list {
+        border-top: $m-color solid 1px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        &:first-child {
+            border-top: none;
+        }
+     
+       
+    }
+}

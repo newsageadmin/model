@@ -1,0 +1,56 @@
+.masterBox {
+
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius:10px ;
+    padding: 15px 30px 15px 15px;
+
+    .d-flex {
+
+        font-size: $font*2.125;
+        font-weight: 500;
+        color: $m-color;
+        @include mob(){
+            margin-top: 15px;
+        }
+    }
+
+    .imageBoxstyle{
+        @include pad(){
+            height: 100%;
+            img {
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+    }
+
+
+    .modelDataList {
+        @include ulstyle();
+        font-size: $font*1.5;
+        margin-top: 30px;
+        li {
+            padding: 5px 0;
+            color: $m-color;
+        }
+        @include mob(){
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    
+    }
+
+    .reserve {
+        color: #fff;
+        display: inline-block;
+        padding: 3px 20px;
+        border-radius: 10vw;
+        background-color: #afc2ee;
+        text-decoration: none;
+        font-size: $font*1.75;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+   
+}
+

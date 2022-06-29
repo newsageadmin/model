@@ -1,0 +1,92 @@
+#header {
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    background: #fff;
+    min-height: 50px;
+    padding: 15px 0;
+    .row {
+        height: inherit;
+    }
+
+.nav {
+    
+    ul {
+        @include ulstyle();
+        width: 100%;
+        li {
+            position: relative;
+            display: inline-block;
+            margin-right: 25px;
+          
+
+            a {
+                text-decoration: none;
+                color: $m-color;
+                font-weight: $bold;
+                font-size: $font*1.2;
+            }
+
+            ul {
+                
+                width: 120%;
+                position: absolute;
+                left: 0;
+                z-index: 10;
+                display: none;
+               
+                li {
+                    background-color: $m-color;
+                    padding: 5px 0;
+                    width: 100%;
+                    text-align: center;
+                    a {
+                        color: #fff;
+                        display: block;
+                       
+                    }
+                }
+
+            }
+        }
+    }
+}
+.memberBtnIcon {
+    color: $m-color;
+    font-size: $font*1.5;
+}
+
+.memberBtn {
+    @include mob(){
+        transform: translateX(-120%);
+        background: #fff;
+        position: fixed;
+        top: 0;
+        
+        height: 100vh;
+        z-index: 2;
+        transition: all 0.35s ease;
+
+       .nav {
+        text-align: center !important;
+        ul {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 120%;
+
+
+            li {
+                display: block;
+                border-bottom: #eee solid 1px;
+                padding: 10px 0;
+            }
+
+        }
+      
+       }
+
+       &.vis {
+        transform: translateX(-25%);
+       }
+    }
+}
+}
