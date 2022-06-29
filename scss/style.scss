@@ -45,10 +45,28 @@ body {
     transform: translate(-50%,-50%);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background: #fff;
+    @include mob(){
+        width: 85%;
+
+    }
 
     .btnstyle {
         background-color: $m-color;
         color: #fff;
+    }
+
+    form {
+        @include mob(){
+            padding: 15px;
+        }
+    }
+
+    h1.mb-3.f-color.fs-4 {
+       @include mob(){
+        text-align: center;
+        padding-top: 10px;
+       }
+
     }
    
 
