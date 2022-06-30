@@ -23,7 +23,7 @@ $('.allModelList').owlCarousel({
     0: {
       items: 2,
       nav: false,
-      dots:true
+      dots: true
     },
     600: {
       items: 3,
@@ -33,20 +33,44 @@ $('.allModelList').owlCarousel({
       items: 4,
       nav: false,
       loop: false,
-      mouseDrag:false
+      mouseDrag: false
     }
   }
 });
 
 
 //收藏
-$('.favorite').click(function(){
+$('.favorite').click(function () {
   $(this).toggleClass('vis');
-  if( $(this).hasClass('vis') ){
+  if ($(this).hasClass('vis')) {
     $(this).find('i').removeClass('bi-heart').addClass('bi-heart-fill');
-  }else {
+  } else {
     $(this).find('i').removeClass('bi-heart-fill').addClass('bi-heart');
-  }  
+  }
 });
 
 
+//列表收藏
+
+
+
+$('.modelInfo').find('i').click(function () {
+  $(this).toggleClass('vis');
+  if ($(this).hasClass('vis')) {
+    $(this).removeClass('bi-heart').addClass('bi-heart-fill');
+  } else {
+    $(this).removeClass('bi-heart-fill').addClass('bi-heart');
+  }
+})
+
+
+//內頁收藏
+
+$('.masterBox').find('i').click(function () {
+  $(this).toggleClass('vis');
+  if ($(this).hasClass('vis')) {
+    $(this).removeClass('bi-heart').addClass('bi-heart-fill');
+  } else {
+    $(this).removeClass('bi-heart-fill').addClass('bi-heart');
+  }
+})

@@ -289,6 +289,11 @@ body {
         color: $m-color;
         background-color: #fff;
         border-radius: 10px;
+        .modelInfo {
+            i {
+                cursor: pointer;
+            }
+        }
     }
     .modelData {
         p {
