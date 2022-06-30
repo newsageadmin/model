@@ -1,8 +1,7 @@
 //共用載入
 
-$('#header').load('../model/header.html');
-$('footer').load('../model/footer.html');
-
+$('#header').load('./header.html');
+$('footer').load('./footer.html');
 
 
 $('#sliderBox').owlCarousel({

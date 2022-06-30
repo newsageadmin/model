@@ -442,6 +442,14 @@ body {
     padding-top: 10px;
   }
 }
+#loginBox .loginInfo {
+  padding-right: 30px;
+}
+@media (max-width: 769px) {
+  #loginBox .loginInfo {
+    padding-right: 0;
+  }
+}
 
 .imageBoxstyle {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

@@ -72,6 +72,13 @@ body {
        }
 
     }
+
+    .loginInfo {
+        padding-right: 30px;
+        @include mob(){
+         padding-right: 0;
+        }
+    }
    
 
 }
