@@ -17,7 +17,7 @@ $('#sliderBox').owlCarousel({
 
 $('.allModelList').owlCarousel({
   loop: true,
-  margin: 15,
+  margin: 10,
   dots: false,
   responsiveClass: true,
   responsive: {
@@ -40,5 +40,14 @@ $('.allModelList').owlCarousel({
 });
 
 
+//收藏
+$('.favorite').click(function(){
+  $(this).toggleClass('vis');
+  if( $(this).hasClass('vis') ){
+    $(this).find('i').removeClass('bi-heart').addClass('bi-heart-fill');
+  }else {
+    $(this).find('i').removeClass('bi-heart-fill').addClass('bi-heart');
+  }  
+});
 
 

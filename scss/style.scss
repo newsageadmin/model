@@ -18,6 +18,10 @@ body {
   
 }
 
+.container-fluid {
+    min-height: 100px;
+}
+
 .more {
     color: #fff;
     font-size: $font*2;
@@ -89,6 +93,7 @@ body {
     text-overflow: ellipsis;
     margin-top: 10px;
     margin-bottom: 5px;
+    max-height: 53px;
   
     
 
@@ -195,6 +200,9 @@ body {
                 @include mob(){
                     top: 5px;
                     right: 15px;
+                }
+                i {
+                    cursor: pointer;
                 }
             }
             .reserve {

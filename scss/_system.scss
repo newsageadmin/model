@@ -51,15 +51,13 @@ $bold:500;
     @media (max-width:769px) {
         
         @content;
-    }
-    
-    
+    }  
 }
 
 
 @mixin sm-mob() {
     
-    @media (max-width:351px) {
+    @media (max-width:400px) {
         
         @content;
     }

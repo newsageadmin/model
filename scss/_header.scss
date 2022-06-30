@@ -16,6 +16,9 @@
             position: relative;
             display: inline-block;
             margin-right: 25px;
+            @include sm-mob(){
+                margin-right: 15px;
+            }
           
 
             a {
@@ -75,8 +78,7 @@
 
 
             li {
-                display: block;
-                border-bottom: #eee solid 1px;
+                display: block; 
                 padding: 10px 0;
             }
 

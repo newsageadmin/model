@@ -21,6 +21,11 @@
   display: inline-block;
   margin-right: 25px;
 }
+@media (max-width: 400px) {
+  #header .nav ul li {
+    margin-right: 15px;
+  }
+}
 #header .nav ul li a {
   text-decoration: none;
   color: #afc2ee;
@@ -69,7 +74,6 @@
   }
   #header .memberBtn .nav ul li {
     display: block;
-    border-bottom: #eee solid 1px;
     padding: 10px 0;
   }
   #header .memberBtn.vis {
@@ -388,6 +392,10 @@ body {
   background-color: #fbfbfb;
 }
 
+.container-fluid {
+  min-height: 100px;
+}
+
 .more {
   color: #fff;
   font-size: 2rem;
@@ -448,6 +456,7 @@ body {
   text-overflow: ellipsis;
   margin-top: 10px;
   margin-bottom: 5px;
+  max-height: 53px;
 }
 .runNewsbox .runNewstitle {
   background-color: #afc2ee;
@@ -553,6 +562,9 @@ body {
     top: 5px;
     right: 15px;
   }
+}
+.sliderBoxWarp #sliderBox .sliderList .favorite i {
+  cursor: pointer;
 }
 .sliderBoxWarp #sliderBox .sliderList .reserve {
   position: absolute;
