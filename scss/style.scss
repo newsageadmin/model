@@ -320,6 +320,37 @@ body {
 
 .hotModel {
 
+    .col-md-5 {
+
+        img {
+            object-fit: cover;
+            object-position: center;
+            height: 735px;
+            @include xl(){
+                height: 100%;
+            }
+            @include xl-pad(){
+                height: 100%;
+            }
+            @include pad(){
+                height: 100%;
+            }
+           
+        }
+
+        .imageBoxstyle {
+            @include xl(){
+                height: 97%;
+            }
+            @include xl-pad(){
+                height: 97%;
+            }
+            @include pad(){
+                height: 97%;
+            }
+        }
+    }
+
     .col {
         margin-bottom: 20px;
         @include mob(){
