@@ -426,6 +426,16 @@ body {
   background: #fff;
 }
 @media (max-width: 769px) {
+  #loginBox .loginImg img {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+@media (max-width: 769px) {
   #loginBox {
     width: 85%;
   }

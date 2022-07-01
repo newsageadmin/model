@@ -42,6 +42,19 @@ body {
 
 #loginBox {
 
+    .loginImg {
+        @include mob(){
+
+            img {
+                height: 300px;
+                object-fit: cover;
+                width: 100%;
+                object-position: center;
+            }
+
+        }
+    }
+
     width: 960px;
     position: fixed;
     top: 50%;
