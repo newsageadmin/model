@@ -465,7 +465,13 @@ body {
 }
 @media (max-width: 769px) {
   #loginBox {
-    width: 85%;
+    width: 100%;
+    position: static;
+    top: inherit;
+    left: inherit;
+    transform: translate(0, 0);
+    margin: 0 auto;
+    box-shadow: none;
   }
 }
 #loginBox .btnstyle {

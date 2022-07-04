@@ -52,7 +52,6 @@ body {
 
         @include mob(){
 
-          
 
             img {
                 height: 300px;
@@ -79,7 +78,13 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background: #fff;
     @include mob(){
-        width: 85%;
+        width: 100%;
+        position: static;
+        top: inherit;
+        left: inherit;
+        transform: translate(0,0);
+        margin: 0 auto;
+        box-shadow:none;
 
     }
 
