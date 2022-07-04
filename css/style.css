@@ -43,6 +43,12 @@
   display: none;
   z-index: 5;
 }
+@media (max-width: 769px) {
+  #header .nav ul li ul {
+    width: 200%;
+    left: -55%;
+  }
+}
 #header .nav ul li ul li {
   background-color: #afc2ee;
   padding: 5px 10px;
@@ -53,6 +59,11 @@
 #header .nav ul li ul li a {
   color: #fff;
   display: block;
+}
+@media (max-width: 769px) {
+  #header .nav ul li ul li a {
+    font-size: 1rem;
+  }
 }
 #header .memberBtnIcon {
   color: #afc2ee;
@@ -519,7 +530,6 @@ body {
 }
 @media (max-width: 769px) {
   #loginBox .loginInfo {
-    padding-right: 0;
     padding-top: 25px;
   }
 }
@@ -546,6 +556,11 @@ body {
   border-radius: 5px;
   font-size: 1.4rem;
 }
+@media (max-width: 769px) {
+  .runNewsbox .runNewstitle {
+    font-size: 1.2rem;
+  }
+}
 .runNewsbox ul {
   padding: 0;
   margin: 0;
@@ -559,6 +574,11 @@ body {
   margin-right: 20px;
   line-height: 37.5px;
   color: #333;
+}
+@media (max-width: 769px) {
+  .runNewsbox ul li {
+    line-height: 32.8px;
+  }
 }
 .runNewsbox ul .tip-1 {
   color: #fff;
@@ -717,7 +737,7 @@ body {
 .newModelWarp:after {
   content: "";
   width: 100%;
-  height: 80%;
+  height: 85%;
   background-color: #E0E7F8;
   position: absolute;
   top: 20vh;
@@ -834,6 +854,23 @@ body {
 
 .areaList {
   min-height: 400px;
+}
+.areaList .newModel:nth-child(even) {
+  position: relative;
+}
+.areaList .newModel:nth-child(even):before {
+  content: "";
+  background-color: rgb(245, 214, 233);
+  width: 200%;
+  height: 106%;
+  top: 0px;
+  position: absolute;
+  left: -20%;
+}
+@media (max-width: 769px) {
+  .areaList .newModel:nth-child(even):before {
+    display: none;
+  }
 }
 .areaList .newModel:nth-child(even) .masterTitle {
   color: #EEAFD5;
