@@ -12,12 +12,21 @@
     ul {
         @include ulstyle();
         width: 100%;
+
         li {
             position: relative;
             display: inline-block;
-            margin-right: 25px;
+            padding-right: 25px;
+           
+
+            &:last-child {
+                margin-right: 0;
+              
+            }
+
             @include sm-mob(){
                 margin-right: 15px;
+                padding-right: 0px;
             }
           
 
@@ -30,20 +39,25 @@
 
             ul {
                 
-                width: 120%;
+                width: 150%;
                 position: absolute;
-                left: 0;
-                z-index: 10;
+                left: -45%;
                 display: none;
+                z-index: 5;
+               
+              
+               
                
                 li {
                     background-color: $m-color;
-                    padding: 5px 0;
-                    width: 100%;
+                    padding: 5px 10px;
                     text-align: center;
+                    width: 100%;
+                    z-index: 5;
                     a {
                         color: #fff;
                         display: block;
+
                        
                     }
                 }
@@ -80,6 +94,7 @@
             li {
                 display: block; 
                 padding: 10px 0;
+              
             }
 
         }

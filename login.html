@@ -21,13 +21,11 @@
 <body>
 
     <section id="loginBox">
-
-        <div class="row">
+        <div class="row g-0 g-md-3">
             <div class="col-md-auto col-12 align-self-center">
                 <div class="loginImg">
                     <img src="images/login.jpg" class="img-fluid" height="300">
                 </div>
-
             </div>
             <div class="col-md-auto col-12 align-self-center">
                 <div class="loginInfo">
@@ -65,8 +63,8 @@
 
             </div>
         </div>
-
     </section>
+
 
 
 
@@ -83,6 +81,14 @@
         go.addEventListener('click', (e) => {
             alert('登入成功');
             location.href = "index.html";
+        });
+
+
+        $("input").on("click", function () {
+            var target = this;
+            setTimeOut(function () {
+                target.scrollIntoView(true);
+            }, 100);
         })
 
 

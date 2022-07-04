@@ -2,6 +2,9 @@
 
     i {
         cursor: pointer;
+        @include mob(){
+            font-size: $font*1.25;
+        }
     }
 
 
@@ -20,6 +23,11 @@
     }
 
     .imageBoxstyle{
+        img {
+             height: 600px;
+            object-fit: cover;
+
+        }
         @include pad(){
             height: 100%;
             img {

@@ -19,11 +19,15 @@
 #header .nav ul li {
   position: relative;
   display: inline-block;
-  margin-right: 25px;
+  padding-right: 25px;
+}
+#header .nav ul li:last-child {
+  margin-right: 0;
 }
 @media (max-width: 400px) {
   #header .nav ul li {
     margin-right: 15px;
+    padding-right: 0px;
   }
 }
 #header .nav ul li a {
@@ -33,17 +37,18 @@
   font-size: 1.2rem;
 }
 #header .nav ul li ul {
-  width: 120%;
+  width: 150%;
   position: absolute;
-  left: 0;
-  z-index: 10;
+  left: -45%;
   display: none;
+  z-index: 5;
 }
 #header .nav ul li ul li {
   background-color: #afc2ee;
-  padding: 5px 0;
-  width: 100%;
+  padding: 5px 10px;
   text-align: center;
+  width: 100%;
+  z-index: 5;
 }
 #header .nav ul li ul li a {
   color: #fff;
@@ -89,6 +94,11 @@
 .masterBox i {
   cursor: pointer;
 }
+@media (max-width: 769px) {
+  .masterBox i {
+    font-size: 1.25rem;
+  }
+}
 .masterBox .d-flex {
   font-size: 2.125rem;
   font-weight: 500;
@@ -98,6 +108,11 @@
   .masterBox .d-flex {
     margin-top: 15px;
   }
+}
+.masterBox .imageBoxstyle img {
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .masterBox .imageBoxstyle {
@@ -426,6 +441,11 @@ body {
   background: #fff;
 }
 @media (max-width: 769px) {
+  #loginBox {
+    height: 100vh;
+  }
+}
+@media (max-width: 769px) {
   #loginBox .loginImg img {
     height: 300px;
     -o-object-fit: cover;
@@ -434,6 +454,14 @@ body {
     -o-object-position: center;
        object-position: center;
   }
+}
+#loginBox .loginImg .error {
+  color: #f44336;
+  font-size: 0.9rem;
+}
+#loginBox .loginImg .success {
+  color: green;
+  font-size: 0.9rem;
 }
 @media (max-width: 769px) {
   #loginBox {
@@ -495,12 +523,31 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  display: inline-flex;
+  margin-right: 20px;
+  line-height: 37.5px;
+  color: #333;
 }
-.runNewsbox ul li a {
-  color: #afc2ee;
-  text-decoration: none;
-  font-size: 1.3rem;
-  line-height: 37px;
+.runNewsbox ul .tip-1 {
+  color: #fff;
+  background-color: #f44336;
+  margin-right: 5px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.runNewsbox ul .tip-2 {
+  color: #fff;
+  background-color: #afc2ee;
+  margin-right: 5px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.runNewsbox ul .tip-3 {
+  color: #fff;
+  background-color: #13b320;
+  margin-right: 5px;
+  padding: 0 10px;
+  border-radius: 5px;
 }
 
 .sliderBoxWarp {
@@ -675,6 +722,12 @@ body {
 @media (max-width: 769px) {
   .newModel a.reserve {
     margin-top: 10px;
+  }
+}
+@media (max-width: 769px) {
+  .newModel .more {
+    font-size: 1rem !important;
+    color: #afc2ee;
   }
 }
 

@@ -53,7 +53,6 @@ $('.favorite').click(function () {
 //列表收藏
 
 
-
 $('.modelInfo').find('i').click(function () {
   $(this).toggleClass('vis');
   if ($(this).hasClass('vis')) {
