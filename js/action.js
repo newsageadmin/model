@@ -65,11 +65,20 @@ $('.modelInfo').find('i').click(function () {
 
 //內頁收藏
 
-$('.masterBox').find('i').click(function () {
+$('.masterBox').find('i.bi-heart').click(function () {
   $(this).toggleClass('vis');
   if ($(this).hasClass('vis')) {
     $(this).removeClass('bi-heart').addClass('bi-heart-fill');
   } else {
     $(this).removeClass('bi-heart-fill').addClass('bi-heart');
   }
-})
+});
+
+$('.masterBox').find('i.bi-bookmark').click(function () {
+  $(this).toggleClass('vis');
+  if ($(this).hasClass('vis')) {
+    $(this).removeClass('bi-bookmark').addClass('bi-bookmark-fill');
+  } else {
+    $(this).removeClass('bi-bookmark-fill').addClass('bi-bookmark');
+  }
+});
