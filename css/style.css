@@ -461,11 +461,6 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background: #fff;
 }
-@media (max-width: 769px) {
-  #loginBox {
-    height: 100vh;
-  }
-}
 @media (min-width: 768px) and (max-width: 991px) {
   #loginBox .loginImg img {
     height: 300px;
@@ -485,14 +480,6 @@ body {
     -o-object-position: center;
        object-position: center;
   }
-}
-#loginBox .loginImg .error {
-  color: #f44336;
-  font-size: 0.9rem;
-}
-#loginBox .loginImg .success {
-  color: green;
-  font-size: 0.9rem;
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   #loginBox {
@@ -512,12 +499,21 @@ body {
     left: inherit;
     transform: translate(0, 0);
     margin: 0 auto;
+    height: 100vh;
     box-shadow: none;
   }
 }
 #loginBox .btnstyle {
   background-color: #afc2ee;
   color: #fff;
+}
+#loginBox form .error {
+  color: #f44336;
+  font-size: 0.9rem;
+}
+#loginBox form .success {
+  color: green;
+  font-size: 0.9rem;
 }
 @media (max-width: 769px) {
   #loginBox form {

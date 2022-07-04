@@ -42,13 +42,7 @@ body {
 
 #loginBox {
 
-    @include mob(){
-        height: 100vh;
-    }
-
-  
-
-    .loginImg {
+       .loginImg {
 
         @include pad(){
 
@@ -78,10 +72,6 @@ body {
 
         }
 
-        .error {color: #f44336;font-size: $font*0.9;}
-        .success { color:green;font-size: $font*0.9;}
-
-
 
 
     }
@@ -106,6 +96,7 @@ body {
         left: inherit;
         transform: translate(0,0);
         margin: 0 auto;
+        height: 100vh;
         box-shadow:none;
 
     }
@@ -116,6 +107,11 @@ body {
     }
 
     form {
+
+        .error {color: #f44336;font-size: $font*0.9;}
+        .success { color:green;font-size: $font*0.9;}
+
+
         @include mob(){
             padding: 15px;
         }
