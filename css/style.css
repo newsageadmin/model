@@ -445,6 +445,16 @@ body {
     height: 100vh;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #loginBox .loginImg img {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
 @media (max-width: 769px) {
   #loginBox .loginImg img {
     height: 300px;
@@ -462,6 +472,16 @@ body {
 #loginBox .loginImg .success {
   color: green;
   font-size: 0.9rem;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #loginBox {
+    width: 85%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #loginBox {
+    width: 60%;
+  }
 }
 @media (max-width: 769px) {
   #loginBox {
@@ -490,11 +510,17 @@ body {
   }
 }
 #loginBox .loginInfo {
-  padding-right: 30px;
+  padding: 0 25px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #loginBox .loginInfo {
+    padding: 25px;
+  }
 }
 @media (max-width: 769px) {
   #loginBox .loginInfo {
     padding-right: 0;
+    padding-top: 25px;
   }
 }
 

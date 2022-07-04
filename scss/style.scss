@@ -50,8 +50,24 @@ body {
 
     .loginImg {
 
-        @include mob(){
+        @include pad(){
 
+            img {
+               
+                height: 300px;
+                object-fit: cover;
+                width: 100%;
+                object-position: center;
+
+            }
+
+        
+          
+
+        }
+
+
+        @include mob(){
 
             img {
                 height: 300px;
@@ -77,6 +93,12 @@ body {
     transform: translate(-50%,-50%);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background: #fff;
+    @include xl-pad(){
+        width: 85%;
+    }
+    @include pad(){
+        width: 60%;
+    }
     @include mob(){
         width: 100%;
         position: static;
@@ -108,9 +130,15 @@ body {
     }
 
     .loginInfo {
-        padding-right: 30px;
+        padding: 0 25px;
+
+        @include pad(){
+            padding:25px;
+        }
+       
         @include mob(){
          padding-right: 0;
+         padding-top: 25px;
         }
     }
    
