@@ -1,5 +1,9 @@
 .masterBox {
 
+    @include mob(){
+        padding: 15px 15px 20px 15px;
+    }
+
     i {
         cursor: pointer;
         @include mob(){
@@ -23,11 +27,18 @@
     }
 
     .imageBoxstyle{
+
+
         img {
              height: 600px;
-            object-fit: cover;
+             object-fit: cover;
+             @include mob(){
+                height: 300px;
+             }
 
         }
+
+
         @include pad(){
             height: 100%;
             img {

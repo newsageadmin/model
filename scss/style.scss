@@ -403,6 +403,9 @@ body {
        
     }
     .more {
+        &:hover {
+            color: $m-color;
+        }
         @include mob(){
             font-size: $font*1 !important;
             color: $m-color;
@@ -481,12 +484,13 @@ body {
         position: relative;   
         &:before {
             content: "";
-            background-color: rgb(245, 214, 233);
+            background-color: rgba(245, 214, 233,.45);
             width: 200%;
             height: 106%;
-            top: 0px;
+            top: -20px;
             position: absolute;
             left: -20%;
+            z-index: -1;
             @include mob(){
                display: none;
             }

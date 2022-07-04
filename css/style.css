@@ -102,6 +102,11 @@
   border-radius: 10px;
   padding: 15px 30px 15px 15px;
 }
+@media (max-width: 769px) {
+  .masterBox {
+    padding: 15px 15px 20px 15px;
+  }
+}
 .masterBox i {
   cursor: pointer;
 }
@@ -124,6 +129,11 @@
   height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 769px) {
+  .masterBox .imageBoxstyle img {
+    height: 300px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .masterBox .imageBoxstyle {
@@ -776,6 +786,9 @@ body {
     margin-top: 10px;
   }
 }
+.newModel .more:hover {
+  color: #afc2ee;
+}
 @media (max-width: 769px) {
   .newModel .more {
     font-size: 1rem !important;
@@ -860,12 +873,13 @@ body {
 }
 .areaList .newModel:nth-child(even):before {
   content: "";
-  background-color: rgb(245, 214, 233);
+  background-color: rgba(245, 214, 233, 0.45);
   width: 200%;
   height: 106%;
-  top: 0px;
+  top: -20px;
   position: absolute;
   left: -20%;
+  z-index: -1;
 }
 @media (max-width: 769px) {
   .areaList .newModel:nth-child(even):before {
