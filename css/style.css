@@ -736,7 +736,7 @@ body {
 .newModelWarp:after {
   content: "";
   width: 100%;
-  height: 85%;
+  height: 80%;
   background-color: #E0E7F8;
   position: absolute;
   top: 20vh;
@@ -867,7 +867,7 @@ body {
   height: 106%;
   top: -20px;
   position: absolute;
-  left: -20%;
+  left: -30%;
   z-index: -1;
 }
 @media (max-width: 769px) {
