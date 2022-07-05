@@ -86,7 +86,7 @@
                         flex: 100%;
                         padding: 10px 0;
                         &:before {
-                            content: '預約單狀態';
+                            content: '狀態/操作';
                             margin-right: 15px;
                             background-color: #707070;
                             color: #fff;
@@ -99,22 +99,11 @@
                             display: inline-block !important;
 
                         }
-                    }
-                    .col:nth-child(6) {
-                        flex: 100%;
-                        padding: 10px 0;
-                        &:before {
-                            content: '檢視';
-                            background-color: #707070;
-                            color: #fff;
-                            text-align: center;
-                            margin-right: 15px;
-                            width: 25%;
-                            border-radius: 5px;
-                            display: inline-block;
+                        .d-flex {
+                            display: inline-flex !important;
                         }
-                     
                     }
+                
                 }
                
     

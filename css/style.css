@@ -259,7 +259,7 @@
     padding: 10px 0;
   }
   .memberBox .memberList ul li .col:nth-child(5):before {
-    content: "預約單狀態";
+    content: "狀態/操作";
     margin-right: 15px;
     background-color: #707070;
     color: #fff;
@@ -271,19 +271,8 @@
   .memberBox .memberList ul li .col:nth-child(5) button {
     display: inline-block !important;
   }
-  .memberBox .memberList ul li .col:nth-child(6) {
-    flex: 100%;
-    padding: 10px 0;
-  }
-  .memberBox .memberList ul li .col:nth-child(6):before {
-    content: "檢視";
-    background-color: #707070;
-    color: #fff;
-    text-align: center;
-    margin-right: 15px;
-    width: 25%;
-    border-radius: 5px;
-    display: inline-block;
+  .memberBox .memberList ul li .col:nth-child(5) .d-flex {
+    display: inline-flex !important;
   }
 }
 .memberBox .memberList ul li:first-child {
@@ -566,7 +555,8 @@ body {
 }
 @media (max-width: 769px) {
   .runNewsbox .runNewstitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-align: center;
   }
 }
 .runNewsbox ul {

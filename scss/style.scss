@@ -171,7 +171,8 @@ body {
         border-radius: 5px;
         font-size: $font*1.4;
         @include mob(){
-            font-size: $font*1.2;
+            font-size: $font*1;
+            text-align: center;
         }
        
        
