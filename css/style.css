@@ -557,6 +557,7 @@ body {
   .runNewsbox .runNewstitle {
     font-size: 1rem;
     text-align: center;
+    padding: 6.5px 0;
   }
 }
 .runNewsbox ul {
@@ -575,7 +576,7 @@ body {
 }
 @media (max-width: 769px) {
   .runNewsbox ul li {
-    line-height: 32.8px;
+    line-height: 37px;
   }
 }
 .runNewsbox ul .tip-1 {

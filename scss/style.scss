@@ -173,6 +173,7 @@ body {
         @include mob(){
             font-size: $font*1;
             text-align: center;
+            padding: 6.5px 0;
         }
        
        
@@ -189,7 +190,7 @@ body {
             line-height: 37.5px;
             color: #333;
             @include mob(){
-                line-height: 32.8px;
+                line-height: 37px;
             }
 
            
