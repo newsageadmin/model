@@ -423,6 +423,9 @@ html.dark body #header {
 html.dark body #header .nav a {
   color: #fff;
 }
+html.dark body #header .memberBtn.vis {
+  background: #5d5d5d;
+}
 html.dark body .sliderList img {
   border-radius: 15px;
 }
@@ -549,6 +552,11 @@ html.dark body .areaList .newModel .more.fs-5 {
 html.dark body .areaList .newModel:nth-child(2n)::before {
   display: none;
 }
+@media (max-width: 769px) {
+  html.dark body .areaList .newModel:nth-child(odd) .owl-stage-outer .item.mb-3 {
+    margin-bottom: 0 !important;
+  }
+}
 html.dark body .areaList .newModel:nth-child(odd) .modelList {
   background-color: #363636;
   border: #363636 solid 3px;
@@ -569,6 +577,11 @@ html.dark body .areaList .newModel:nth-child(odd) .masterTitle:after {
 }
 html.dark body .areaList .newModel:nth-child(odd) .d-vis {
   display: block;
+}
+@media (max-width: 769px) {
+  html.dark body .areaList .newModel:nth-child(odd) .d-vis {
+    margin-top: 1rem;
+  }
 }
 html.dark body .areaList .newModel:nth-child(odd) .d-vis .more {
   display: inline-block;
@@ -615,6 +628,12 @@ html.dark body .areaList .newModel:nth-child(even) .owl-stage-outer {
 }
 html.dark body .areaList .newModel:nth-child(even) .owl-stage-outer .item.mb-3 {
   margin-bottom: 0 !important;
+}
+html.dark body .areaList .newModel:nth-child(even) .owl-theme .owl-dots .owl-dot.active span {
+  background-color: #869791;
+}
+html.dark body .areaList .newModel:nth-child(even) .owl-theme .owl-dots .owl-dot span {
+  background-color: #D6D6D6;
 }
 html.dark .masterBox {
   background: #5d5d5d;
