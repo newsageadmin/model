@@ -331,12 +331,14 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
   padding: 0 0 10px 0;
+  background: #fff;
 }
 
 .modelDatawarp {
   border-radius: 10px;
   padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
 }
 .modelDatawarp .modelDataList {
   color: #afc2ee;
@@ -411,7 +413,268 @@
   background-color: rgb(167, 28, 185);
 }
 
+html.dark body {
+  transition: all 0.25s ease;
+  background-color: #363636;
+}
+html.dark body #header {
+  background-color: #5d5d5d;
+}
+html.dark body #header .nav a {
+  color: #fff;
+}
+html.dark body .sliderList img {
+  border-radius: 15px;
+}
+html.dark body .masterTitle {
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+html.dark body .masterTitle:after {
+  content: "";
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #807df7;
+  bottom: 0px;
+  height: 15px;
+  z-index: -1;
+}
+html.dark body .masterTitle img, html.dark body .masterTitle svg {
+  display: none;
+}
+html.dark body .container-fluid {
+  background-color: #5d5d5d;
+}
+html.dark body .runNewsbox .runNewstitle {
+  background-color: #807df7;
+}
+html.dark body .runNewsbox ul li {
+  color: #fff;
+}
+html.dark body .newModelWarp:after {
+  display: none;
+}
+html.dark body .newModelWarp .newModel a.reserve {
+  background-color: #807df7;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+html.dark body .newModelWarp .newModel .modelData {
+  text-align: left !important;
+}
+html.dark body .newModelWarp .newModel .modelData p {
+  display: inline-block;
+  margin-right: 5px;
+}
+html.dark body .newModelWarp .newModel .col.mb-3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #5d5d5d;
+}
+html.dark body .newModelWarp .newModel .modelList {
+  color: #fff;
+  background-color: #5d5d5d;
+  transition: all 0.35s ease;
+  border: #5d5d5d solid 3px;
+}
+html.dark body .newModelWarp .newModel .modelList .modelInfo .d-flex.mb-3 {
+  margin-bottom: 0px !important;
+}
+html.dark body .newModelWarp .newModel .modelList .modelInfo .row .col-md-6 {
+  flex: 0 0 auto;
+  width: 100%;
+  text-align: center;
+}
+html.dark body .newModelWarp .newModel .modelList .modelInfo .row .col-md-6:last-child {
+  text-align: center !important;
+  margin-top: 15px;
+}
+html.dark body .newModelWarp .newModel .modelList:hover {
+  background-color: #363636;
+  transition: all 0.35s ease;
+  border: #807df7 solid 3px;
+}
+html.dark body .newModelWarp .newModel .modelList img {
+  border-radius: 15px;
+}
+html.dark body .areaList .newModel a.reserve {
+  background-color: #807df7;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+html.dark body .areaList .newModel .modelData {
+  text-align: left !important;
+}
+html.dark body .areaList .newModel .modelData p {
+  display: inline-block;
+  margin-right: 5px;
+}
+html.dark body .areaList .newModel .col.mb-3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #5d5d5d;
+}
+html.dark body .areaList .newModel .modelList {
+  color: #fff;
+  background-color: #5d5d5d;
+  transition: all 0.35s ease;
+}
+html.dark body .areaList .newModel .modelList .modelInfo .d-flex.mb-3 {
+  margin-bottom: 0px !important;
+}
+html.dark body .areaList .newModel .modelList .modelInfo .row .col-md-6 {
+  flex: 0 0 auto;
+  width: 100%;
+  text-align: center;
+}
+html.dark body .areaList .newModel .modelList .modelInfo .row .col-md-6:last-child {
+  text-align: center !important;
+  margin-top: 15px;
+}
+html.dark body .areaList .newModel .modelList:hover {
+  background-color: #363636;
+  transition: all 0.35s ease;
+}
+html.dark body .areaList .newModel .modelList img {
+  border-radius: 15px;
+}
+html.dark body .areaList .newModel .more.fs-5 {
+  display: none;
+}
+html.dark body .areaList .newModel:nth-child(2n)::before {
+  display: none;
+}
+html.dark body .areaList .newModel:nth-child(odd) .modelList {
+  background-color: #363636;
+  border: #363636 solid 3px;
+}
+html.dark body .areaList .newModel:nth-child(odd) .modelList img {
+  border-radius: 15px;
+}
+html.dark body .areaList .newModel:nth-child(odd) .modelList:hover {
+  background: #5d5d5d;
+  transition: all 0.35s ease;
+  border: #807df7 solid 3px;
+}
+html.dark body .areaList .newModel:nth-child(odd) .masterTitle {
+  color: #fff;
+}
+html.dark body .areaList .newModel:nth-child(odd) .masterTitle:after {
+  background-color: #afc2ee;
+}
+html.dark body .areaList .newModel:nth-child(odd) .d-vis {
+  display: block;
+}
+html.dark body .areaList .newModel:nth-child(odd) .d-vis .more {
+  display: inline-block;
+  border: #fff solid 2px;
+  border-radius: 10px;
+  padding: 2px 10px;
+  font-weight: 600;
+}
+html.dark body .areaList .newModel:nth-child(odd) .d-vis .more i {
+  color: #afc2ee;
+}
+html.dark body .areaList .newModel:nth-child(even) .modelList {
+  background: #5d5d5d;
+  border: #5d5d5d solid 3px;
+  color: #fff;
+}
+html.dark body .areaList .newModel:nth-child(even) .modelList img {
+  border-radius: 15px;
+}
+html.dark body .areaList .newModel:nth-child(even) .modelList:hover {
+  border: #807df7 solid 3px;
+  transition: all 0.35s ease;
+  background-color: #363636;
+}
+html.dark body .areaList .newModel:nth-child(even) .masterTitle {
+  color: #fff;
+}
+html.dark body .areaList .newModel:nth-child(even) .d-vis {
+  display: block;
+}
+html.dark body .areaList .newModel:nth-child(even) .d-vis .more {
+  display: inline-block;
+  border: #fff solid 2px;
+  border-radius: 10px;
+  padding: 2px 10px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+html.dark body .areaList .newModel:nth-child(even) .d-vis .more i {
+  color: #807df7;
+}
+html.dark body .areaList .newModel:nth-child(even) .owl-stage-outer {
+  background-color: #5d5d5d;
+  border-radius: 15px;
+}
+html.dark body .areaList .newModel:nth-child(even) .owl-stage-outer .item.mb-3 {
+  margin-bottom: 0 !important;
+}
+html.dark .masterBox {
+  background: #5d5d5d;
+  box-shadow: none;
+  border: #807df7 solid 2px;
+}
+html.dark .masterBox .d-flex {
+  color: #fff;
+}
+html.dark .masterBox .modelDataList li {
+  color: #fff;
+}
+html.dark .masterBox .reserve {
+  background-color: #807df7;
+  border-radius: 10px;
+}
+html.dark .memberBox .userInfo, html.dark .memberBox .bi-pencil-fill {
+  color: #fff;
+}
+html.dark .memberBox .modelDatawarp {
+  background-color: #5d5d5d;
+  border: #afc2ee solid 2px;
+}
+html.dark .modelDataList {
+  color: #fff;
+}
+html.dark .modelDataList .btn-false {
+  color: #fff;
+}
+html.dark .memberListwarp {
+  background-color: #fff;
+}
+html.dark .memberListwarp .memberList .btn-ture {
+  background: #807df7;
+}
+html.dark .areaList .row.row-cols-md-4.row-cols-2.g-2.g-md-3 .col {
+  padding: 10px 0;
+}
+html.dark .areaList .row.row-cols-md-4.row-cols-2.g-2.g-md-3 .col .newModel {
+  background-color: #5d5d5d;
+}
+html.dark .areaList .row.row-cols-md-4.row-cols-2.g-2.g-md-3 .col .newModel .mb-3 {
+  margin-bottom: 0 !important;
+}
+html.dark .areaList .row.row-cols-md-4.row-cols-2.g-2.g-md-3 .col .newModel .mb-3 .modelList {
+  background-color: #5d5d5d;
+  border: #5d5d5d solid 3px;
+}
+html.dark .areaList .row.row-cols-md-4.row-cols-2.g-2.g-md-3 .col .newModel .mb-3 .modelList:hover {
+  background-color: #363636;
+  transition: all 0.35s ease;
+  border: #807df7 solid 3px;
+}
+html.dark footer {
+  background-color: #5d5d5d;
+}
+
 body {
+  transition: all 0.25s ease;
   width: 100%;
   overflow-x: hidden;
   font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
@@ -422,6 +685,10 @@ body {
 
 .container-fluid {
   min-height: 100px;
+}
+
+.d-vis {
+  display: none;
 }
 
 .more {

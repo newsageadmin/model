@@ -7,8 +7,15 @@
 @import "modelInside";
 @import "member";
 @import "list";
+@import "dark";
+
+
+
+
+
 
 body {
+    transition: all 0.25s ease;
     width: 100%;
     overflow-x: hidden;
     font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
@@ -20,6 +27,10 @@ body {
 
 .container-fluid {
     min-height: 100px;
+}
+
+.d-vis {
+    display: none;
 }
 
 .more {
@@ -220,6 +231,7 @@ body {
 }
 
 .sliderBoxWarp {
+
     min-height: 400px;
     @include mob(){
         min-height: inherit;
@@ -227,8 +239,6 @@ body {
 
     #sliderBox {
    
-  
-
         .owl-nav {
           
             margin: 0;
@@ -325,12 +335,9 @@ body {
         
                 }
             }
-        }
-        
+        }  
     }
-
 }
-
 
 
 .masterTitle {

@@ -82,3 +82,5 @@ $('.masterBox').find('i.bi-bookmark').click(function () {
     $(this).removeClass('bi-bookmark-fill').addClass('bi-bookmark');
   }
 });
+
+
