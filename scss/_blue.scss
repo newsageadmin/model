@@ -1,13 +1,13 @@
-html.dark {
+html.blue {
    
 
     body {
         transition: all 0.25s ease;
-        background-color: $dark;
+        background-color: $b-dark;
 
         #header{
 
-            background-color: #5d5d5d;
+            background-color: #364f63;
 
             .nav {
 
@@ -18,7 +18,7 @@ html.dark {
                     padding: 0 15px;
                     transition: all 0.35s ease;
                     &:hover {
-                        background-color: $dark;
+                        background-color: $blue;
                         border-radius: 5px;
                         transition: all 0.35s ease;
                     }
@@ -30,7 +30,7 @@ html.dark {
                             left: -40%;
                             top: 35px;
                             li {
-                                background-color: $dark;
+                                background-color: $blue;
                             }
                         }
                     }
@@ -40,7 +40,7 @@ html.dark {
 
             .memberBtn.vis {
                 
-                background: #5d5d5d;
+                background: #364f63;
             }
         
         } 
@@ -63,7 +63,7 @@ html.dark {
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
-                background-color: #807df7;
+                background-color: $blue;
                 bottom: 0px;
                 height: 15px;
                 z-index: -1;
@@ -75,12 +75,12 @@ html.dark {
         }
 
          .container-fluid {
-            background-color: #5d5d5d;
+            background-color: #364f63;
                 }
 
                 .runNewsbox {
                     .runNewstitle {
-                        background-color: $dm-color;
+                        background-color: $blue;
                     }
                     ul {
                         li {
@@ -102,7 +102,7 @@ html.dark {
 
                     .newModel {
                          a.reserve {
-                            background-color: $dm-color;
+                            background-color: $blue;
                             color: #fff;
                             border-radius: 5px;
                             padding: 8px 10px;
@@ -117,13 +117,13 @@ html.dark {
                         .col.mb-3 {
                             padding-top: 10px;
                             padding-bottom: 10px;
-                            background-color: #5d5d5d;
+                            background-color: #364f63;
                         }
                         .modelList {
                             color: #fff;
-                            background-color: #5d5d5d;
+                            background-color: #364f63;
                             transition: all 0.35s ease;
-                            border:#5d5d5d solid 3px;
+                            border:#364f63 solid 3px;
                             .modelInfo {
                                 .d-flex.mb-3 {
                                     margin-bottom: 0px !important;
@@ -141,9 +141,9 @@ html.dark {
                                 }
                             }
                             &:hover {
-                                background-color: $dark;
+                                background-color: $b-dark;
                                 transition: all 0.35s ease;
-                                border:$dm-color solid 3px;
+                                border:$blue solid 3px;
                             }
                             img {
                                 border-radius: 15px;
@@ -158,7 +158,7 @@ html.dark {
                     .newModel   {
 
                         a.reserve {
-                            background-color: $dm-color;
+                            background-color: $blue;
                             color: #fff;
                             border-radius: 5px;
                             padding: 8px 10px;
@@ -173,11 +173,11 @@ html.dark {
                         .col.mb-3 {
                             padding-top: 10px;
                             padding-bottom: 10px;
-                            background-color: #5d5d5d;
+                            background-color: #364f63;
                         }
                         .modelList {
                             color: #fff;
-                            background-color: #5d5d5d;
+                            background-color: #364f63;
                             transition: all 0.35s ease;
                             .modelInfo {
                                 .d-flex.mb-3 {
@@ -196,7 +196,7 @@ html.dark {
                                 }
                             }
                             &:hover {
-                                background-color: $dark;
+                                background-color: $b-dark;
                                 transition: all 0.35s ease;
                             }
                             img {
@@ -223,15 +223,15 @@ html.dark {
                             }
 
                             .modelList {         
-                                background-color: $dark;
-                                border: $dark solid 3px;
+                                background-color: $b-dark;
+                                border: $b-dark solid 3px;
                                 img {
                                     border-radius: 15px;
                                 }
                                 &:hover {
-                                    background: #5d5d5d;
+                                    background: #364f63;
                                     transition: all 0.35s ease;
-                                    border: $dm-color solid 3px;
+                                    border: $blue solid 3px;
                                 }
                             }
                             .masterTitle {
@@ -265,16 +265,16 @@ html.dark {
                         &:nth-child(even) {
                           
                             .modelList {
-                                background: #5d5d5d;
-                                border:#5d5d5d solid 3px ;                            
+                                background: #364f63;
+                                border:#364f63 solid 3px ;                            
                                 color: #fff;
                                 img {
                                     border-radius: 15px;
                                 }
                                 &:hover {
-                                    border: $dm-color solid 3px;
+                                    border: $blue solid 3px;
                                     transition: all 0.35s ease;
-                                    background-color: $dark;
+                                    background-color: $b-dark;
                                 }
                               
 
@@ -294,12 +294,12 @@ html.dark {
                                     font-weight: 600;
                                     margin-top: 1rem;
                                     i {
-                                        color: $dm-color;
+                                        color: $blue;
                                     }
                                 }
                             }
                             .owl-stage-outer {
-                                background-color: #5d5d5d;
+                                background-color: #364f63;
                               
                                 .item.mb-3 {
                                     margin-bottom: 0 !important;
@@ -322,9 +322,9 @@ html.dark {
 
 
     .masterBox {
-        background: #5d5d5d;
+        background: #364f63;
         box-shadow: none;
-        border: $dm-color solid 2px;
+        border: $blue solid 2px;
         .d-flex {
             color: #fff;
         }
@@ -334,7 +334,7 @@ html.dark {
             }
         }
          .reserve {
-            background-color: $dm-color;
+            background-color: $blue;
             border-radius: 10px;
          }
     }
@@ -350,7 +350,7 @@ html.dark {
           
 
             .modelDatawarp {
-                background-color: #5d5d5d;
+                background-color: #364f63;
                 border: $m-color solid 2px;
             }
             
@@ -368,7 +368,7 @@ html.dark {
             .memberList {
 
                 .btn-ture {
-                    background: $dm-color;
+                    background: $blue;
                 }
 
             }
@@ -387,22 +387,22 @@ html.dark {
                   
 
                     .newModel {
-                        background-color: #5d5d5d;
+                        background-color: #364f63;
                        
 
                         .mb-3 {
                             margin-bottom: 0 !important;
                             .modelList {
-                                background-color: #5d5d5d;
-                                border: #5d5d5d solid 3px;
+                                background-color: #364f63;
+                                border: #364f63 solid 3px;
 
                              
 
 
                                 &:hover {
-                                    background-color: $dark;
+                                    background-color: $b-dark;
                                     transition: all 0.35s ease;
-                                    border: $dm-color solid 3px;
+                                    border: $blue solid 3px;
 
                                 }
                             }
@@ -420,7 +420,7 @@ html.dark {
 
 
     footer {
-        background-color: #5d5d5d;
+        background-color: #364f63;
     }
    
    

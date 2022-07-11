@@ -871,10 +871,7 @@
     <!--此處暗版結尾-->>
     </div>
 
-
-
     <div class="newModel">
-
 
       <div class="d-flex mt-5">
         <div class="col">
@@ -1284,12 +1281,11 @@
   <script>
     $(function () {
 
-
       //lightbox的我要預約，後面自帶
       document.querySelectorAll('.img').forEach((el) => el.addEventListener('click', (e) => {
         e.preventDefault();
         let src = e.target.dataset.href;
-        console.log(src)
+        console.log(src);
 
         let box = document.querySelectorAll('.lightbox-caption');
         let str = `<a href="${src}" class="text-white">我要預約</a>`;

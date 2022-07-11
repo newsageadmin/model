@@ -32,6 +32,7 @@
         <li><a href="member.html">使用者名稱</a></li>
         <li><a href="#">登出</a></li>
         <li><a href="#" class="dark">DARK</a></li>
+        <li><a href="#" class="blue">BLUE</a></li>
       </ul>
     </nav>
   </div>
@@ -52,13 +53,46 @@
 
     let logoSrc = $('#header').find('img');
 
-    $('html').toggleClass('dark');
+
+     //以下可刪
+     if( $('html').hasClass('blue') ){
+      $('html').removeClass('blue').addClass('dark');
+    }else {
+      $('html').toggleClass('dark');
+    }
+    //over
+
 
     if ($('html').hasClass('dark')) {
       logoSrc.attr('src', './images/d-LOGO.png');
     } else {
       logoSrc.attr('src', './images/LOGO.png');
     }
+  });
+
+  //調整藍色版本
+  $('.blue').click(function () {
+
+    let logoSrc = $('#header').find('img');
+
+    //以下可刪
+    if( $('html').hasClass('dark') ){
+      $('html').removeClass('dark').addClass('blue');
+    }else {
+      $('html').toggleClass('blue');
+    }
+    //over
+
+    if ($('html').hasClass('blue')) {
+      logoSrc.attr('src', './images/d-LOGO.png');
+    } else {
+      logoSrc.attr('src', './images/LOGO.png');
+    }
+
+  
 
   });
+
+
+
 </script>
