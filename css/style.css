@@ -37,8 +37,12 @@
   font-size: 1.2rem;
   display: block;
   border-radius: 5px;
-  padding: 0 15px;
   transition: all 0.35s ease;
+}
+@media (min-width: 1441px) {
+  #header .nav ul li a {
+    padding: 0 15px;
+  }
 }
 #header .nav ul li a:hover {
   background-color: transparent;
@@ -433,8 +437,12 @@ html.dark body #header .nav a {
   color: #fff;
   display: block;
   border-radius: 5px;
-  padding: 0 15px;
   transition: all 0.35s ease;
+}
+@media (min-width: 1441px) {
+  html.dark body #header .nav a {
+    padding: 0 15px;
+  }
 }
 html.dark body #header .nav a:hover {
   background-color: #363636;
@@ -727,8 +735,12 @@ html.blue body #header .nav a {
   color: #fff;
   display: block;
   border-radius: 5px;
-  padding: 0 15px;
   transition: all 0.35s ease;
+}
+@media (min-width: 1441px) {
+  html.blue body #header .nav a {
+    padding: 0 15px;
+  }
 }
 html.blue body #header .nav a:hover {
   background-color: #29aff1;
@@ -886,13 +898,16 @@ html.blue body .areaList .newModel:nth-child(odd) .modelList img {
 html.blue body .areaList .newModel:nth-child(odd) .modelList:hover {
   background: #364f63;
   transition: all 0.35s ease;
-  border: #29aff1 solid 3px;
+  border: #807df7 solid 3px;
+}
+html.blue body .areaList .newModel:nth-child(odd) .modelList .reserve {
+  background-color: #807df7;
 }
 html.blue body .areaList .newModel:nth-child(odd) .masterTitle {
   color: #fff;
 }
 html.blue body .areaList .newModel:nth-child(odd) .masterTitle:after {
-  background-color: #afc2ee;
+  background-color: #807df7;
 }
 html.blue body .areaList .newModel:nth-child(odd) .d-vis {
   display: block;
@@ -910,7 +925,7 @@ html.blue body .areaList .newModel:nth-child(odd) .d-vis .more {
   font-weight: 600;
 }
 html.blue body .areaList .newModel:nth-child(odd) .d-vis .more i {
-  color: #29aff1;
+  color: #807df7;
 }
 html.blue body .areaList .newModel:nth-child(even) .modelList {
   background: #364f63;

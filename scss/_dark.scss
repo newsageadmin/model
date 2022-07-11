@@ -12,10 +12,12 @@ html.dark {
             .nav {
 
                 a {
+                    @include xxl(){
+                        padding: 0 15px;
+                    }
                     color: #fff;
                     display: block;
                     border-radius: 5px;
-                    padding: 0 15px;
                     transition: all 0.35s ease;
                     &:hover {
                         background-color: $dark;

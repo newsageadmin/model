@@ -12,10 +12,13 @@ html.blue {
             .nav {
 
                 a {
+                    @include xxl(){
+                        padding: 0 15px;
+                    }
                     color: #fff;
                     display: block;
                     border-radius: 5px;
-                    padding: 0 15px;
+                   
                     transition: all 0.35s ease;
                     &:hover {
                         background-color: $blue;
@@ -212,6 +215,8 @@ html.blue {
                         }
 
                         &:nth-child(odd) {
+
+                          
                            
                             .owl-stage-outer {
                                                            
@@ -231,13 +236,17 @@ html.blue {
                                 &:hover {
                                     background: #364f63;
                                     transition: all 0.35s ease;
-                                    border: $blue solid 3px;
+                                    border: $dm-color solid 3px;
+                                }
+
+                                .reserve {
+                                    background-color: $dm-color;
                                 }
                             }
                             .masterTitle {
                                 color: #fff;
                                 &:after {
-                                    background-color: $m-color;
+                                    background-color: $dm-color;
                                 }
                             }
 
@@ -255,7 +264,9 @@ html.blue {
                                     font-weight: 600;
 
                                     i {
-                                        color: $blue;
+                                        color: $dm-color;
+                                       
+                                       
                                     }
                                 }
                             }
